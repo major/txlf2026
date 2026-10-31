@@ -1,0 +1,40 @@
+.slidev-layout.cover.title-slide {
+  align-content: start;
+  padding-top: 5.5rem;
+}
+
+.slidev-layout.cover.title-slide h1 {
+  font-size: 3.00rem;
+  line-height: 1.2;
+}
+
+.title-slide .photo-credit {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.slidev-layout:has(.footnotes) {
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.slidev-layout .footnotes-sep {
+  display: none;
+}
+
+.slidev-layout .footnotes {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 3.5rem;
+  right: 3.5rem;
+  border-top: 1px solid currentColor;
+  padding-top: 0.5rem;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.slidev-layout .footnotes p,
+.slidev-layout .footnotes li {
+  margin: 0;
+  line-height: 1.4;
+}
