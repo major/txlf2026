@@ -11,6 +11,8 @@ class: text-center title-slide
 comark: true
 duration: 45min
 transition: none
+fonts:
+  weights: '200,400,600,800'
 ---
 
 # Thou Shalt Not Make a Machine<br>in the Likeness of a Senior Engineer
@@ -31,7 +33,7 @@ Texas Linux Fest &raquo; 2026-11-07
 layout: section
 ---
 
-## What does it mean to be human?
+## How is _Dune_ related to AI and engineering fears?
 
 (Summarizing _Dune_ in a conference talk is a tall order, but let's see what we can do.)
 
@@ -45,17 +47,31 @@ layout: full
 * People delegated thinking to machines.
 * Those who controlled the machines then controlled everyone else.
 * A violent revolt led to a ban on thinking machines. ^[Butlerian Jihad]
-* Powerful orders developed advanced human abilities instead. ^[Includes Mentats, Bene Gesserit, Spacing Guild]
+
+---
+layout: center
+---
+
+# The revolt didn't end the dependence;<br>it moved it.
+
+Mentats replaced computers, Guild navigators were addicted to spice,<br>and the universe stood still for 10,000 years.
+
+---
+layout: center
+---
+
+# The story centers on Paul Atreides:
+
 * Paul is 15 years old and part of a noble family.
 * Paul's mother trained him in the mental/physical disciplines of the Bene Gesserit.
-* Reverend Mother has a test for him... 
+
 
 ---
 layout: image
 image: https://cdn.stillslab.com/movies/dune-part-one_frames/dune_part_one_frames_frame_62.webp
 ---
 
-# Then came that scene<br>with _the box_
+# The Reverend Mother<br>shows up with _the box_
 
 ---
 layout: full
@@ -63,7 +79,8 @@ layout: full
 
 # A test
 
-* Reverend Mother tells Paul to put his hand in the box.
+* Bene Gesserit is a sisterhood of powerful women
+* Their leader, the Reverend Mother, tells Paul to put his hand in the box.
 * Paul: "What's in the box?"
 * Mother: "Pain."
 * She holds a gom jabbar^[Poisoned needle; instant death] to his neck.
@@ -161,209 +178,287 @@ Back to the topic at hand:
 ## ...senior engineer? 🤔
 
 ---
-layout: full
+layout: center
 ---
 
 # Does this sound familiar to you?
 
-<v-clicks>
-
-* _"I've built these skills over years. AI does it in seconds."_
-* _"Everything keeps moving faster and faster. I can't keep up."_
-* _"We used to talk, and build, and craft."_
-* _"Maybe I never really was very good at this like I thought I was."_
-
-</v-clicks>
-
 ---
-layout: statement
+layout: quote
 ---
 
-## Your impostor syndrome is saying <span style="color: red">you are the counterfeit</span>.
-
-## The fear is that AI will <span style="color: red">eventually counterfeit you</span>.
+# "I've built these skills over years.<br>AI does it in seconds."
 
 ---
 layout: quote
 ---
 
-# "It is all right to be afraid. One cannot be brave without fear. Those young fools who love danger and feel no fear are only fools. Courage comes when we recognize our fear, face it, and hurl ourselves into the battle."
-Gerry Spence, _Win Your Case_
-
----
-layout: center
----
-
-# The machines aren't going anywhere.
-
-How can we prevent fear from making our decisions for us?<br>
-How can we move from fearful to hopeful?
+# "Everything keeps moving faster and faster.<br>I can't keep up."
 
 ---
 layout: quote
 ---
 
-## "It is ruinous when a mind is worried about the future, wretched before its wretchedness begins, anxious that it may forever hold on to the things that bring it pleasure. For such a mind will never be at rest, and in awaiting the future it loses sight of what it might have enjoyed in the present. The fear of losing a thing is as bad as regret at having lost it."
-
-Seneca, _Epistles 98.6_
+# "We used to talk, and build, and craft."
 
 ---
-layout: full
+layout: quote
 ---
 
-# How I learned to stop worrying and love the LLM
-
-I dragged out a lot of the same mantras that we've always followed as engineers
-
-* If you do something twice, automate it
-* Treat the budget at work as if it was my own money
-* Choose lazy solutions, but never be lazy with planning
-* More uncertainty demands a "belt and suspenders"^[Using extra safeguards and double-check everything.] approach
-* Be thorough when presenting a plan if you want it to move forward
-* Keep your tools sharp
-* Mentor those around you so they can level up
-
-LLMs can help with all of these.
-
----
-layout: full
----
-
-<figure class="m-0 flex h-full flex-col gap-4">
-  <img
-    src="https://cdn.stillslab.com/movies/dune-part-one_frames/dune_part_one_frames_frame_57.webp"
-    alt="A scene from Dune: Part One."
-    class="min-h-0 w-full flex-1 object-contain"
-  />
-  <figcaption class="shrink-0 text-center">
-    Your expertise and experience are incredibly valuable even in this new AI era.
-  </figcaption>
-</figure>
+# "Maybe I never really was very good at this<br>like I thought I was."
 
 ---
 layout: center
 ---
 
-# If you and your coworkers are using the same tools and models, what makes you different?<br>What makes you valuable?
+# What are our options?
 
-This stuff that you're already good at. 😉
-
----
-layout: full
----
-
-# Constantly update commands, skills, and instructions
-
-Don't let the LLM make the same mistake twice.
-
-* Update your core instructions (`AGENTS.md`) for rules that apply across all projects.
-* Build concise skills for specific operations that need to be done your way
-* Reduce typing and increase consistency by writing commands in your harness for frequent tasks
-
-Your LLM refers to these documents constantly. This part of keeping your tools sharp.
+How did it work out in _Dune_?
 
 ---
 layout: center
+class: text-center
 ---
 
-# Not sure what to refine or how to refine it?
+# Two options from _Dune_
 
-Let the LLM handle it with a prompt like this that I use in OpenCode:
-
-```
-Examine opencode session ses_abcd1234.
-Where did we waste tokens or wall clock time in that session?
-How can we make this faster or more token efficient the next time?
-Give me your five top ideas and consider new/updated commands,
-skills, core instructions, or tools.
-```
-
-I recently found a bug in an MCP server that was increasing<br>
-my token spend by 20% on every single session!
-
----
-layout: center
----
-
-# Get your pull requests merged sooner
-
-Developers using LLMs make a lot of changes,<br>but how can you ensure yours gets merged faster?<br>
-My pull request skill has this:
-
-```
-Explain the logic and data flow before and after my proposed change
-in bullet points and uncode box flow charts.
-Always highlight any behavior changes that could surprise the reviewer
-and what I've done to guard against problems.
-Ensure the reviewer can quickly understand the business value of the
-change as well as the benefits to other developers.
-```
-
-Use the same strategy for reviewing pull requests!<br>
-Build a command or skill that contains your thought process for doing reviews.
-
----
-layout: center
----
-
-# We all love Jira, right?
-
-Let your LLM take care of this for you:
-
-```
-Update the status of my Jira tickets whenever opening a pull request.
-Add a link to the PR and include the decisions made from our planning session.
-Set tickets to Review status when we open a PR.
-```
-
----
-layout: image
-image: /images/mountains-jannis-brandt.jpg
-class: flex items-center justify-center text-center
----
-
-<h1 class="!m-0 rounded bg-black/70 px-6 py-4 text-white">Remember the humans, too</h1>
-
-<div class="photo-credit absolute bottom-4 right-5 rounded bg-black/60 px-2 py-1 text-white">
-  Photo by
-  <a href="https://unsplash.com/@jannisbrandt?utm_source=txlf_2026&utm_medium=referral">Jannis Brandt</a>
-  on
-  <a href="https://unsplash.com/photos/man-sitting-on-rock-looking-at-green-trees-in-mountains-nCBkvuiImjM?utm_source=txlf_2026&utm_medium=referral">Unsplash</a>
+<div class="option-grid">
+  <div class="option-card">
+    <div class="option-emoji">🏳️</div>
+    <h3>Surrender</h3>
+    <p>Give the thinking to the machines.</p>
+  </div>
+  <div class="option-vs">or</div>
+  <div class="option-card option-card-revolt">
+    <div class="option-emoji">⚔️</div>
+    <h3>Revolt</h3>
+    <p>Start the Butlerian Jihad and smash every machine.</p>
+  </div>
 </div>
 
 ---
 layout: center
 ---
 
-# Remind LLMs what your true goal is
+# Both outcomes allow ***fear*** to make the decision.
 
-From one of my code review skills:
+---
+layout: statement
+---
 
-```
-You are a mentor and coach for the merge request author.
-Their success is critical.
-This project is also critical.
-You are always helpful and respectful.
-Gently educate and assist without being pedantic or condescending.
+# This isn't a pro-AI talk.
 
-Merge request reviews have a few core goals:
+This about how we survive and thrive in this moment.<br>
+How do we continue enjoying the difficult problems we love to solve?
 
-1. Help the MR author merge the highest quality code possible.
-2. Assist the MR author in merging their work quickly.
-3. Prevent the MR author from making the same errors in the future.
-```
+---
+layout: center
+---
+
+# If the machines are here to stay,<br>how do we make do with what we have?
+
+Let's look to the stoics.
+
+---
+layout: center
+---
+
+# What is stoicism?
+
+Stoics believe that much of what happens is **outside our control,**<br>but we always control is **how we respond** to what happens.
+
+---
+layout: center
+class: text-center
+---
+
+# Some things are up to us, and some are not.
+
+<div class="option-grid option-grid-pair">
+  <div class="option-card">
+    <div class="option-emoji">🌪️</div>
+    <h3>Not up to us</h3>
+    <ul>
+      <li>Whether AI technology exists</li>
+      <li>How fast the field moves</li>
+      <li>What CEOs do and say</li>
+      <li>What the models give us</li>
+    </ul>
+  </div>
+  <div class="option-card option-card-ours">
+    <div class="option-emoji">🧭</div>
+    <h3>Up to us</h3>
+    <ul>
+      <li>What we accept and merge</li>
+      <li>How we learn and practice</li>
+      <li>How we teach others</li>
+      <li>Whether we keep our judgment</li>
+    </ul>
+  </div>
+</div>
+
+<p class="option-caption">Epictetus, <em>Enchiridion</em> 1</p>
+
+<!--
+Revolt fights what is not up to us: AI exists and isn't going away.
+Surrender gives away what is up to us: our judgment.
+-->
+
+---
+layout: quote
+---
+
+### Do you think that the wise man is burdened by evils? <span style="color: #FF474D">He makes use of them.</span><br>It was not only from ivory that Phidias knew how to make statues; he made them also from bronze. If you had given him marble, or some still lesser material, <span style="color: #FF474D">he would have carved the best statue that could be made of it</span>. So the wise man will display virtue amid riches if possible, but if not, in poverty; at home if he can, but if not, in exile; as a general if he can, but if not, as a soldier; in health if he can, but if not, then in weakness. <span style="color: #FF474D">Whatever fortune he is dealt, he will make of it something remarkable.</span>
+
+Seneca, _Epistles 85.40_
+
+---
+layout: center
+---
+
+# We don't get to pick the material,<br>but we do get to pick what we carve from it.
+
+
+---
+layout: image
+image: https://www.popsci.com/wp-content/uploads/2024/03/05/dune-2-science-of-worms.jpg 
+---
+
+<div class="image-caption">How do we use old tools on a new beast?</div>
+
+---
+layout: center
+class: text-center
+---
+
+# Our Maker Hooks
+
+A Maker is a huge sandworm that Fremen can ride with training (and hooks)
+
+<div class="option-grid option-grid-trio">
+  <div class="option-card option-card-ours">
+    <div class="option-emoji">⚡</div>
+    <h3>Efficiency</h3>
+    <ul>
+      <li>Automate the second time</li>
+      <li>Spend like it's your money</li>
+      <li>Lazy fixes, careful plans</li>
+    </ul>
+  </div>
+  <div class="option-card option-card-ours">
+    <div class="option-emoji">🛡️</div>
+    <h3>Safety</h3>
+    <ul>
+      <li>Belt and suspenders</li>
+      <li>Show your work</li>
+      <li>Never merge what you can't explain</li>
+    </ul>
+  </div>
+  <div class="option-card option-card-ours">
+    <div class="option-emoji">🛠️</div>
+    <h3>Craft</h3>
+    <ul>
+      <li>Keep tools sharp</li>
+      <li>Level others up</li>
+      <li>Learn the why, not&nbsp;just&nbsp;the&nbsp;how</li>
+    </ul>
+  </div>
+</div>
+
+<!--
+I dragged out a lot of the same mantras that we've always followed as engineers:
+
+* If you do something twice, automate it
+* Treat the budget at work as if it was my own money
+* Choose lazy solutions, but never be lazy with planning
+* More uncertainty demands a "belt and suspenders" approach (extra safeguards, double-check everything)
+* Be thorough when presenting a plan if you want it to move forward
+* Keep your tools sharp
+* Mentor those around you so they can level up
+
+LLMs can help with all of these.
+-->
+
+---
+layout: center
+---
+
+# Three things to start doing:
 
 ---
 layout: full
 ---
 
-# Some things are easy to overlook
+# Be efficient
 
-But they're so easy to fix
+Manage models like you would a team of specialists.
 
-* `Write for people who have English as a second language`
-* `Leave behind comments in code to explain decisions`
-* `Principles are guidelines; not laws`
-* `Always use gender neutral language`^[LLMs will try to guess and you definitely don't want that.]
-* `Require me to type APPROVE in all capital letters before replying to any human`
-* `Adopt the Boy Scout rule for code. Leave it better than you found it.`^[This works surprisingly well. LLMs raise things to me constantly that should be cleaned up near the code I am editing.]
+* Model makes a mistake? Edit AGENTS.md right then.
+* Inspect your expensive or repeated sessions to save money.
+* Spend 10x more time/tokens on planning than implementing.
+* Tell models what to do and not how to do it.
+
+---
+layout: full
+---
+
+# Be safe
+
+Keep models on a tight leash.
+
+* Set strict standards for testing, linting, and type checks early.
+* Be specific about what is in scope and what is not.
+* Don't propose code changes that you don't understand yourself.
+
+---
+layout: full
+---
+
+# Be crafty
+
+* Check your own bias by having a model play devil's advocate.
+* Help coworkers level up by adding helpful knowledge to agent instructions and skills.
+* Crush impostor syndrome by using AI tools to get up to speed quickly on any repository.
+
+---
+layout: statement
+---
+
+# Don't let fear<br>drive your decision.
+
+The Fremen didn't worship the form or flee it.<br>They put their hooks in and rode it.
+
+---
+layout: quote
+---
+
+Paul recites the Litany Against Fear with his hand in the box:
+
+# "<span style="color: red">I must not fear. Fear is the mind-killer.</span> Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past, I will turn the inner eye to see its path. Where the fear has gone there will be nothing. <span style="color: red;">Only I will remain.</span>"
+
+Litany Against Fear, _Dune_
+
+---
+layout: cover
+background: /images/sand-dunes-wolfgang-hasselmann.jpg
+class: text-center closing-slide
+---
+
+# Thank you!
+
+<div class="closing">
+  <img class="closing-qr" src="/images/qr-txlf2026.svg" alt="QR code for the slides">
+  <div class="closing-text">
+    <p class="closing-url">major.github.io/txlf2026</p>
+    <p class="closing-name">Major Hayden</p>
+    <p><a href="mailto:major@mhtx.net">major@mhtx.net</a></p>
+    <p class="closing-license">Slides licensed CC-BY-SA</p>
+  </div>
+</div>
+
+<div class="photo-credit absolute bottom-4 right-5">
+  Photo by
+  <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=txlf_2026&utm_medium=referral">Wolfgang Hasselmann</a>
+  on
+  <a href="https://unsplash.com/photos/rolling-sand-dunes-in-desert-landscape-pVr6wvUneMk?utm_source=txlf_2026&utm_medium=referral">Unsplash</a>
+</div>

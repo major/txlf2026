@@ -1,3 +1,8 @@
+.slidev-layout strong,
+.slidev-layout b {
+  font-weight: 800;
+}
+
 .slidev-layout.cover.title-slide {
   align-content: start;
   padding-top: 5.5rem;
@@ -31,6 +36,165 @@
   padding-top: 0.5rem;
   font-size: 12px;
   opacity: 0.75;
+}
+
+/* Closing slide: QR code next to bright, easy-to-read contact info */
+.closing {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.closing-qr {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 0.5rem;
+}
+
+.slidev-layout .closing-text {
+  text-align: left;
+}
+
+/* Extra .closing keeps the theme's cover text styles from shrinking these */
+.slidev-layout .closing .closing-text p {
+  margin: 0.25rem 0;
+  color: #fff;
+  opacity: 1;
+  font-size: 1.25rem;
+}
+
+/* Links match the line they sit in, with no heavy dashed underline */
+.slidev-layout .closing .closing-text a {
+  color: #fff;
+  opacity: 1;
+  font-size: inherit;
+  border-bottom: none;
+}
+
+.slidev-layout .closing .closing-text .closing-name {
+  font-weight: 600;
+}
+
+/* Pin the closing slide content near the top, above the dunes */
+.slidev-layout.cover.closing-slide {
+  align-content: start;
+  padding-top: 3rem;
+}
+
+.slidev-layout .closing .closing-text .closing-url {
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+.slidev-layout .closing .closing-text .closing-license {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Readable caption centered low over a full-screen image */
+.image-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 2.5rem;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.75rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+/* Side-by-side cards for the "two options" slide */
+.option-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 2rem;
+  width: 48rem;
+  margin-top: 2.5rem;
+}
+
+.option-card {
+  border: 2px solid rgba(128, 128, 128, 0.4);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+}
+
+.option-card-revolt {
+  border-color: #FF474D;
+}
+
+.option-emoji {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.slidev-layout .option-card h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+  opacity: 1;
+}
+
+.slidev-layout .option-card p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0 0;
+  opacity: 0.8;
+}
+
+/* Two cards with no "or" between them */
+.option-grid-pair {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Three equal cards, a bit wider so short lists don't wrap */
+.option-grid-trio {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 54rem;
+}
+
+.option-grid-trio .option-card {
+  padding: 1.75rem 1rem;
+}
+
+.slidev-layout .option-grid-trio .option-card li {
+  font-size: 1rem;
+}
+
+/* Spice orange for the "up to us" card */
+.option-card-ours {
+  border-color: #E8A33D;
+}
+
+.slidev-layout .option-card ul {
+  text-align: left;
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.slidev-layout .option-card li {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.slidev-layout .option-caption {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.option-vs {
+  align-self: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  opacity: 0.6;
 }
 
 .slidev-layout .footnotes p,
