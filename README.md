@@ -6,21 +6,54 @@ Major Hayden, Texas Linux Fest, November 7, 2026.
 
 ## Local development
 
-Use Node.js 22.12.0 or newer. CI uses Node.js 26 LTS.
+Use GNU Make, a POSIX shell, and Node.js 22.22.0 or newer. Node.js 26 LTS is recommended and used in CI. Linux and macOS are supported; on Windows, use WSL.
 
 ```sh
-npm ci
-npm run dev
+git clone git@github.com:major/txlf2026.git
+cd txlf2026
+make install
+make dev
 ```
 
-Open http://localhost:3030/. Edit `slides.md`, `style.css`, and `public/images` to update the presentation.
+Open http://localhost:3030/. Edit `slides.md`, `style.css`, and `public/images` to update the presentation. Installation uses `npm ci`, which downloads the matching Chromium browser for exports unless browser downloads are disabled.
+
+### Make commands
+
+| Command | Purpose |
+| --- | --- |
+| `make help` | Show commands and variables (also the default). |
+| `make install` | Install locked dependencies. |
+| `make update` | Update dependencies according to `package.json`. |
+| `make dev` | Start the development server. |
+| `make build` | Build for GitHub Pages. |
+| `make preview` | Build and preview the production site. |
+| `make test` | Build and run all tests. |
+| `make export` | Export a PDF to `dist/slides.pdf`. |
+| `make export-png` | Export PNG images to `dist/export-png`. |
+| `make export-pptx` | Export PowerPoint to `dist/slides.pptx`. |
+| `make browser` | Install or repair Chromium for exports. |
+| `make browser-deps` | Install missing Linux libraries for Chromium. |
+| `make clean` | Remove `dist`. |
+
+`make update` follows the specifications in `package.json`. Theme dependencies use `latest` and can jump major versions. Review the `package.json` and `package-lock.json` diffs, run `make test`, and commit intentional changes.
+
+If Chromium needs repair, run `make browser`. If Linux libraries are missing, run `make browser-deps`; this is optional and may request sudo access. It is not part of normal installation.
+
+Pass extra options with `ARGS` or build-specific options with `BUILD_ARGS`:
+
+```sh
+make preview ARGS='--host 127.0.0.1'
+make export ARGS='--range 1-3'
+make build BUILD_ARGS='--without-notes'
+```
+
+All exports are disposable and stored under `dist`. A build, test, preview, or clean can erase previous exports.
 
 ## Production validation
 
 ```sh
-npm run build -- --base /txlf2026/
-node --test tests/pages.test.mjs
-npx vite preview --base /txlf2026/
+make test
+make preview
 ```
 
 Open http://localhost:4173/txlf2026/ to preview the production build. The tests check entry asset base paths and existence, and the Slidev 404 fallback. They are not full browser tests.

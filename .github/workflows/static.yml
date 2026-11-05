@@ -29,11 +29,13 @@ jobs:
           node-version: '26'
           cache: npm
       - name: Install dependencies
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
         run: npm ci
       - name: Build slides
         run: npm run build -- --base /txlf2026/
       - name: Test Pages output
-        run: node --test tests/pages.test.mjs
+        run: node --test tests/*.test.mjs
       - name: Configure Pages
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
