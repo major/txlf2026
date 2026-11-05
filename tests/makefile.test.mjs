@@ -10,7 +10,8 @@ const root = fileURLToPath(new URL('../', import.meta.url))
 
 /** Run Make without starting servers or installing packages in contract tests. */
 function runMake(args, cwd = root) {
-  const result = spawnSync('make', ['--no-print-directory', ...args], { cwd, encoding: 'utf8' })
+  const result = spawnSync('make', ['--no-print-directory', 'NPM=npm', 'ARGS=', 'BUILD_ARGS=', ...args],
+    { cwd, encoding: 'utf8' })
   assert.equal(result.status, 0, result.stderr || result.error?.message)
   return result.stdout
 }

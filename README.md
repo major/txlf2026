@@ -15,7 +15,7 @@ make install
 make dev
 ```
 
-Open http://localhost:3030/. Edit `slides.md`, `style.css`, and `public/images` to update the presentation. Installation uses `npm ci`, which downloads the matching Chromium browser for exports unless browser downloads are disabled.
+Open http://localhost:3030/. Edit `slides.md`, `style.css`, and `public/images` to update the presentation. Installation uses `npm ci`; browser setup for exports is described below.
 
 ### Make commands
 
@@ -37,15 +37,17 @@ Open http://localhost:3030/. Edit `slides.md`, `style.css`, and `public/images` 
 
 `make update` follows the specifications in `package.json`. Theme dependencies use `latest` and can jump major versions. Review the `package.json` and `package-lock.json` diffs, run `make test`, and commit intentional changes.
 
-If Chromium needs repair, run `make browser`. If Linux libraries are missing, run `make browser-deps`; this is optional and may request sudo access. It is not part of normal installation.
+Before the first export, run `make browser` to install the matching Chromium browser. Some npm configurations skip installation scripts, so `npm ci` may not download it automatically. Run the same command after updating Playwright or if Chromium needs repair. If Linux libraries are missing, run `make browser-deps`; this is optional and may request sudo access. It is not part of normal installation.
 
 Pass extra options with `ARGS` or build-specific options with `BUILD_ARGS`:
 
 ```sh
 make preview ARGS='--host 127.0.0.1'
-make export ARGS='--range 1-3'
+make export ARGS='--per-slide --range 1-3'
 make build BUILD_ARGS='--without-notes'
 ```
+
+With the locked Slidev version, use `--per-slide` when exporting a limited PDF range. This mode can break cross-slide links and the table of contents.
 
 All exports are disposable and stored under `dist`. A build, test, preview, or clean can erase previous exports.
 
