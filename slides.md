@@ -21,7 +21,6 @@ Texas Linux Fest &raquo; 2026-11-07
 
 <a href="mailto:major@mhtx.net">Major Hayden</a>
 
-
 <div class="photo-credit absolute bottom-4 right-5">
   Photo by
   <a href="https://unsplash.com/@wolfgang_hasselmann?utm_source=txlf_2026&utm_medium=referral">Wolfgang Hasselmann</a>
@@ -30,10 +29,40 @@ Texas Linux Fest &raquo; 2026-11-07
 </div>
 
 ---
+layout: center
+---
+
+# Something weird happened during last year's Christmas holidays 🎅
+
+Santa was (likely) not involved.
+
+---
+layout: center
+---
+
+# Before that, I was writing 90% of my code by hand and 10% was AI-assisted, mainly with auto-complete and little questions here and there.
+
+---
+layout: center
+---
+
+# By the end of January, it was completely flipped.
+
+I was writing code by hand maybe 10-20% of the time.
+
+---
+layout: statement
+---
+
+# I was more productive<br>than ever before...<br>but I was in a panic. 😱
+
+I had no idea where the fear came from and why it came upon me so suddenly.
+
+---
 layout: section
 ---
 
-## How is _Dune_ related to AI and engineering fears?
+## How is _Dune_ related to engineering fears around AI?
 
 (Summarizing _Dune_ in a conference talk is a tall order, but let's see what we can do.)
 
@@ -52,7 +81,7 @@ layout: full
 layout: center
 ---
 
-# The revolt didn't end the dependence;<br>it moved it.
+# The revolt didn't end the dependence;<br>**it moved it.**
 
 Mentats replaced computers, Guild navigators were addicted to spice,<br>and the universe stood still for 10,000 years.
 
@@ -71,20 +100,21 @@ layout: image
 image: https://cdn.stillslab.com/movies/dune-part-one_frames/dune_part_one_frames_frame_62.webp
 ---
 
-# The Reverend Mother<br>shows up with _the box_
+# Then the Reverend Mother<br>shows up with _the box_
 
 ---
 layout: full
 ---
 
-# A test
+# A test for Paul
 
 * Bene Gesserit is a sisterhood of powerful women
 * Their leader, the Reverend Mother, tells Paul to put his hand in the box.
 * Paul: "What's in the box?"
 * Mother: "Pain."
-* She holds a gom jabbar^[Poisoned needle; instant death] to his neck.
-* The pain in the box is unbearable.
+* He puts his hand in the box.
+* She holds a gom jabbar^[Poisoned needle; instant death] to his neck. ☠️
+* The pain in the box is unbearable. 🫣
 
 What is she testing? 🤔
 
@@ -266,6 +296,14 @@ layout: center
 # What is stoicism?
 
 Stoics believe that much of what happens is **outside our control,**<br>but we always control is **how we respond** to what happens.
+
+---
+layout: quote
+---
+
+# “Some things torment us more than they ought; some before they ought; and some when they ought not to torment us at all.”
+
+Seneca, _Letter 13_
 
 ---
 layout: center
