@@ -421,50 +421,85 @@ LLMs can help with all of these.
 layout: center
 ---
 
-# Three things to start doing:
+# A few things to start doing:
 
 ---
-layout: full
+layout: center
 ---
 
-# Be efficient
+# Model made a mistake?<br>Edit AGENTS.md right then.
 
-Manage models like you would a team of specialists.
-
-* Model makes a mistake? Edit AGENTS.md right then.
-* Inspect your expensive or repeated sessions to save money.
-* Spend 10x more time/tokens on planning than implementing.
-* Tell models what to do and not how to do it.
+⚡ Be efficient
 
 ---
-layout: full
+layout: center
 ---
 
-# Be safe
+# Inspect your expensive<br>or repeated sessions<br>to save money.
 
-Keep models on a tight leash.
-
-* Set strict standards for testing, linting, and type checks early.
-* Be specific about what is in scope and what is not.
-* Don't propose code changes that you don't understand yourself.
+⚡ Be efficient
 
 ---
-layout: full
+layout: center
 ---
 
-# Be crafty
+# Spend 10x more time/tokens<br>on planning than implementing.
 
-* Check your own bias by having a model play devil's advocate.
-* Help coworkers level up by adding helpful knowledge to agent instructions and skills.
-* Crush impostor syndrome by using AI tools to get up to speed quickly on any repository.
+⚡ Be efficient
+
+---
+layout: center
+---
+
+# Set strict standards for testing,<br>linting, and type checks early.
+
+🛡️ Be safe
+
+---
+layout: center
+---
+
+# Be specific about what is in scope<br>and what is not.
+
+🛡️ Be safe
+
+---
+layout: center
+---
+
+# Don't propose code changes<br>that you don't understand yourself.
+
+🛡️ Be safe
+
+---
+layout: center
+---
+
+# Check your own bias by having a model<br>play devil's advocate.
+
+🛠️ Be crafty
+
+---
+layout: center
+---
+
+# Help coworkers level up<br>by adding helpful knowledge<br>to agent instructions and skills.
+
+🛠️ Be crafty
+
+---
+layout: center
+---
+
+# Crush impostor syndrome by using AI tools<br>to get up to speed quickly on any repository.
+
+🛠️ Be crafty
 
 ---
 layout: statement
 ---
 
-# Don't let fear<br>drive your decision.
-
-The Fremen didn't worship the sandworms or flee them.<br>They put their hooks in and rode it.
+# One last thing about fear...
 
 ---
 layout: quote
@@ -475,6 +510,14 @@ Paul recites the Litany Against Fear with his hand in the box:
 # "<span style="color: red">I must not fear. Fear is the mind-killer.</span> Fear is the little-death that brings total obliteration. I will face my fear. I will permit it to pass over me and through me. And when it has gone past, I will turn the inner eye to see its path. Where the fear has gone there will be nothing. <span style="color: red;">Only I will remain.</span>"
 
 Litany Against Fear, _Dune_
+
+---
+layout: statement
+---
+
+# Don't let fear<br>drive your decision.
+
+The Fremen didn't worship the sandworms or flee them.<br>They put their hooks in and rode it.
 
 ---
 layout: cover
