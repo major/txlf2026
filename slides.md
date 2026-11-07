@@ -464,7 +464,7 @@ layout: statement
 
 # Don't let fear<br>drive your decision.
 
-The Fremen didn't worship the form or flee it.<br>They put their hooks in and rode it.
+The Fremen didn't worship the sandworms or flee them.<br>They put their hooks in and rode it.
 
 ---
 layout: quote
