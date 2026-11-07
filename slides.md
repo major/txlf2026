@@ -285,9 +285,11 @@ How do we continue enjoying the difficult problems we love to solve?
 layout: center
 ---
 
+Said another way:
+
 # If the machines are here to stay,<br>how do we make do with what we have?
 
-Let's look to the stoics.
+Some famous stoics might help us in this moment.
 
 ---
 layout: center
@@ -296,6 +298,14 @@ layout: center
 # What is stoicism?
 
 Stoics believe that much of what happens is **outside our control,**<br>but we always control is **how we respond** to what happens.
+
+---
+layout: statement
+---
+
+Stoics are really interested in
+
+# ✨ externals ✨
 
 ---
 layout: quote
@@ -515,7 +525,7 @@ Litany Against Fear, _Dune_
 layout: statement
 ---
 
-# Don't let fear<br>drive your decision.
+# Let your judgement,<br>not fear,<br>drive your decision.
 
 The Fremen didn't worship the sandworms or flee them.<br>They put their hooks in and rode it.
 
